@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Kiểm Tra Độ Đặc Biệt Sinh Nhật</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+            <h1>Máy Kiểm Tra Độ Đặc Biệt Sinh Nhật</h1>
+            <p class="description">Nhập tên và ngày sinh để xem vũ trụ đánh giá bạn đặc biệt tới đâu </p>
+
+            <div class="form-section">
+                <label for="name-input">Tên của bạn:</label>
+                <input type="text" id="name-input" placeholder="Nhập tên của bạn hoặc nạn nhân...">
+
+                <label for="birth-input">Ngày sinh:</label>
+                <input type="date" id="birth-input">
+
+                <button id="start-btn">Bắt đầu phân tích</button>
+            </div>
+
+            <div class="progress">
+                <div class="progress__bar" id="progress-bar"></div>
+            </div>
+
+            <div class="log" id="log-area"></div>
+
+            <div id="result-area" class="result hidden">
+                <h2 id="result-title"></h2>
+                <p id="result-text"></p>
+                <button id="show-video-btn" class="hidden">Xem kết quả bí mật</button>
+            </div>
+
+            <div id="video-section" class="video-section hidden">
+                <h3 id="video-title">Video giải mã độ đặc biệt của bạn</h3>
+                <video id="result-video" src="assets/media/troll.mp4" controls preload="auto"></video>
+                <p class="video-note">Nếu video chưa tự chạy, hãy bấm nút play để xem bí mật vũ trụ dành riêng cho bạn.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
